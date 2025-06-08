@@ -61,6 +61,28 @@
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
+      margin-top: 10px;
+    }
+    .payment {
+      margin-top: 40px;
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+    .print-btn {
+      display: block;
+      margin: 20px auto 0;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .print-btn:hover {
+      background-color: #0056b3;
     }
     footer {
       text-align: center;
@@ -83,54 +105,27 @@
       <p>Rp60.000 - Rp120.000</p>
       <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+wisuda+(Rp60.000+-+Rp120.000)">Pesan via WA</a>
     </div>
-    <div class="product">
-      <img src="IMG-20250607-WA0029.jpg" alt="Buket 2">
-      <h3>Buket uang kipas + bunga</h3>
-      <p>Rp300.000</p>
-      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+uang+kipas+%2B+bunga+(Rp300.000)">Pesan via WA</a>
-    </div>
-    <div class="product">
-      <img src="IMG-20250607-WA0034.jpg" alt="Buket 3">
-      <h3>Round buket mawar mix bunga kering</h3>
-      <p>Rp250.000</p>
-      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Round+buket+mawar+mix+bunga+kering+(Rp250.000)">Pesan via WA</a>
-    </div>
-    <div class="product">
-      <img src="IMG-20250607-WA0036.jpg" alt="Buket 4">
-      <h3>Round buket mawar mix bunga kering</h3>
-      <p>Rp250.000</p>
-      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Round+buket+mawar+mix+bunga+kering+(Rp250.000)">Pesan via WA</a>
-    </div>
-    <div class="product">
-      <img src="IMG-20250607-WA0039.jpg" alt="Buket 5">
-      <h3>Buket uang kipas</h3>
-      <p>Rp45.000 - Rp300.000</p>
-      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+uang+kipas+(Rp45.000+-+Rp300.000)">Pesan via WA</a>
-    </div>
-    <div class="product">
-      <img src="IMG-20250607-WA0075.jpg" alt="Buket 6">
-      <h3>Buket custom</h3>
-      <p>Rp45.000 - Rp300.000</p>
-      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+custom+(Rp45.000+-+Rp300.000)">Pesan via WA</a>
-    </div>
-    <div class="product">
-      <img src="IMG-20250607-WA0076.jpg" alt="Buket 7">
-      <h3>Buket wisuda</h3>
-      <p>Rp45.000 - Rp300.000</p>
-      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+wisuda+(Rp45.000+-+Rp300.000)">Pesan via WA</a>
-    </div>
-    <div class="product">
-      <img src="IMG-20250607-WA0078.jpg" alt="Buket 8">
-      <h3>Buket custom request</h3>
-      <p>Rp45.000 - Rp100.000</p>
-      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+custom+request+(Rp45.000+-+Rp100.000)">Pesan via WA</a>
-    </div>
-    <div class="product">
-      <img src="IMG-20250607-WA0079.jpg" alt="Buket 9">
-      <h3>Buket uang kipas + bunga kering request isi</h3>
-      <p>Rp45.000 - Rp300.000</p>
-      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+uang+kipas+%2B+bunga+kering+request+isi+(Rp45.000+-+Rp300.000)">Pesan via WA</a>
-    </div>
+    <!-- Tambahkan produk lainnya di sini -->
+  </section>
+
+  <section class="payment">
+    <h2 style="text-align:center; margin-bottom: 15px;">Metode Pembayaran</h2>
+    <p><strong>Transfer Bank (BRI):</strong></p>
+    <ul>
+      <li>No Rekening: <strong>5985 0105 2797 537</strong></li>
+      <li>Atas Nama: <strong>Antika Sugesti</strong></li>
+    </ul>
+
+    <p><strong>Dana:</strong></p>
+    <ul>
+      <li>No Dana: <strong>0822-4240-6520</strong></li>
+      <li>Atas Nama: <strong>Antika Sugesti</strong></li>
+    </ul>
+
+    <p style="margin-top: 20px;">Setelah melakukan pembayaran, silakan konfirmasi dengan mengirim bukti transfer melalui WhatsApp:</p>
+    <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+sudah+melakukan+transfer+untuk+pembelian+buket+di+Antika+Bouquet.+Berikut+bukti+pembayarannya:" target="_blank">Konfirmasi via WhatsApp</a>
+
+    <button class="print-btn" onclick="window.print()">Cetak Invoice</button>
   </section>
 
   <footer>
