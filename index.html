@@ -1,56 +1,140 @@
-<section class="products">
-  <div class="product">
-    <img src="IMG-20250607-WA0026.jpg" alt="Buket 1">
-    <h3>Buket Mawar Merah</h3>
-    <p>Rp60.000 - Rp120.000</p>
-    <a class="btn" href="https://wa.me/6282242406520?text=Halo%2C+saya+ingin+pesan+Buket+Mawar+Merah">Pesan via WA</a>
-  </div>
-  <div class="product">
-    <img src="IMG-20250607-WA0029.jpg" alt="Buket 2">
-    <h3>Buket Matahari Ceria</h3>
-    <p>Rp1.085.000</p>
-    <a class="btn" href="https://wa.me/6282242406520?text=Halo%2C+saya+ingin+pesan+Buket+Matahari+Ceria">Pesan via WA</a>
-  </div>
-  <div class="product">
-    <img src="IMG-20250607-WA0034.jpg" alt="Buket 3">
-    <h3>Buket Ulang Tahun</h3>
-    <p>Rp250.000</p>
-    <a class="btn" href="https://wa.me/6282242406520?text=Halo%2C+saya+ingin+pesan+Buket+Ulang+Tahun">Pesan via WA</a>
-  </div>
-  <div class="product">
-    <img src="IMG-20250607-WA0036.jpg" alt="Buket 4">
-    <h3>Buket Wisuda</h3>
-    <p>Rp250.000</p>
-    <a class="btn" href="https://wa.me/6282242406520?text=Halo%2C+saya+ingin+pesan+Buket+Wisuda">Pesan via WA</a>
-  </div>
-  <div class="product">
-    <img src="IMG-20250607-WA0039.jpg" alt="Buket 5">
-    <h3>Buket Valentine</h3>
-    <p>Rp1.085.000</p>
-    <a class="btn" href="https://wa.me/6282242406520?text=Halo%2C+saya+ingin+pesan+Buket+Valentine">Pesan via WA</a>
-  </div>
-  <div class="product">
-    <img src="IMG-20250607-WA0075.jpg" alt="Buket 6">
-    <h3>Buket Pink Ceria</h3>
-    <p>Rp75.000 - Rp300.000</p>
-    <a class="btn" href="https://wa.me/6282242406520?text=Halo%2C+saya+ingin+pesan+Buket+Pink+Ceria">Pesan via WA</a>
-  </div>
-  <div class="product">
-    <img src="IMG-20250607-WA0076.jpg" alt="Buket 7">
-    <h3>Buket Boneka</h3>
-    <p>Rp60.000 - Rp300.000</p>
-    <a class="btn" href="https://wa.me/6282242406520?text=Halo%2C+saya+ingin+pesan+Buket+Boneka">Pesan via WA</a>
-  </div>
-  <div class="product">
-    <img src="IMG-20250607-WA0078.jpg" alt="Buket 8">
-    <h3>Buket Ungu Elegan</h3>
-    <p>Rp80.000 - Rp100.000</p>
-    <a class="btn" href="https://wa.me/6282242406520?text=Halo%2C+saya+ingin+pesan+Buket+Ungu+Elegan">Pesan via WA</a>
-  </div>
-  <div class="product">
-    <img src="IMG-20250607-WA0079.jpg" alt="Buket 9">
-    <h3>Buket Romantis</h3>
-    <p>Rp80.000 - Rp300.000</p>
-    <a class="btn" href="https://wa.me/6282242406520?text=Halo%2C+saya+ingin+pesan+Buket+Romantis">Pesan via WA</a>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antika Bouquet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #fff;
+      color: #333;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 20px 0;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #000;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .product {
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      background-color: #fafafa;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .product img {
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px;
+      border-radius: 8px;
+    }
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+    .product p {
+      margin: 0 0 10px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #25d366;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Antika Bouquet</h1>
+    <p>Buket cantik untuk setiap momen</p>
+  </header>
+
+  <section class="products">
+    <div class="product">
+      <img src="IMG-20250607-WA0026.jpg" alt="Buket 1">
+      <h3>Buket Mawar Merah</h3>
+      <p>Rp60.000 - Rp120.000</p>
+      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+Mawar+Merah">Pesan via WA</a>
+    </div>
+    <div class="product">
+      <img src="IMG-20250607-WA0029.jpg" alt="Buket 2">
+      <h3>Buket Matahari Ceria</h3>
+      <p>Rp1.085.000</p>
+      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+Matahari+Ceria">Pesan via WA</a>
+    </div>
+    <div class="product">
+      <img src="IMG-20250607-WA0034.jpg" alt="Buket 3">
+      <h3>Buket Ulang Tahun</h3>
+      <p>Rp250.000</p>
+      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+Ulang+Tahun">Pesan via WA</a>
+    </div>
+    <div class="product">
+      <img src="IMG-20250607-WA0036.jpg" alt="Buket 4">
+      <h3>Buket Wisuda</h3>
+      <p>Rp250.000</p>
+      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+Wisuda">Pesan via WA</a>
+    </div>
+    <div class="product">
+      <img src="IMG-20250607-WA0039.jpg" alt="Buket 5">
+      <h3>Buket Valentine</h3>
+      <p>Rp1.085.000</p>
+      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+Valentine">Pesan via WA</a>
+    </div>
+    <div class="product">
+      <img src="IMG-20250607-WA0075.jpg" alt="Buket 6">
+      <h3>Buket Pink Ceria</h3>
+      <p>Rp75.000 - Rp300.000</p>
+      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+Pink+Ceria">Pesan via WA</a>
+    </div>
+    <div class="product">
+      <img src="IMG-20250607-WA0076.jpg" alt="Buket 7">
+      <h3>Buket Boneka</h3>
+      <p>Rp60.000 - Rp300.000</p>
+      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+Boneka">Pesan via WA</a>
+    </div>
+    <div class="product">
+      <img src="IMG-20250607-WA0078.jpg" alt="Buket 8">
+      <h3>Buket Ungu Elegan</h3>
+      <p>Rp80.000 - Rp100.000</p>
+      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+Ungu+Elegan">Pesan via WA</a>
+    </div>
+    <div class="product">
+      <img src="IMG-20250607-WA0079.jpg" alt="Buket 9">
+      <h3>Buket Romantis</h3>
+      <p>Rp80.000 - Rp300.000</p>
+      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+Romantis">Pesan via WA</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Antika Bouquet. All rights reserved.</p>
+  </footer>
+</body>
+</html>
