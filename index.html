@@ -1,129 +1,168 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Antika Bouquet</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif;}
-    body {background: #fff; color: #333; padding: 20px;}
-    header {text-align: center; padding: 20px 0;}
-    header h1 {font-size: 2.5rem; color: #000;}
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #fdfdfd;
+      color: #333;
+    }
+    header {
+      background-color: #f8e1e7;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    nav {
+      background: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      color: #e91e63;
+      font-weight: 600;
+    }
     .products {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      margin-top: 30px;
+      padding: 40px 20px;
     }
     .product {
-      border: 1px solid #eee;
-      border-radius: 10px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
       padding: 15px;
-      background: #fafafa;
       text-align: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
     .product img {
-      width: 100%; max-width: 220px;
-      border-radius: 8px;
+      width: 100%;
+      max-width: 220px;
+      border-radius: 10px;
       margin-bottom: 10px;
     }
-    .product h3 {margin: 10px 0 5px;}
-    .product p {margin-bottom: 10px;}
+    .product h3 {
+      font-size: 1.1rem;
+      margin: 10px 0 5px;
+    }
+    .product p {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
     .btn {
       display: inline-block;
-      background: #25d366;
+      background-color: #25d366;
       color: white;
-      padding: 10px 15px;
-      border-radius: 6px;
+      padding: 8px 14px;
+      border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
     }
-    .payment {
+    .section-title {
+      text-align: center;
+      font-size: 1.5rem;
       margin-top: 40px;
-      padding: 20px;
-      background: #f9f9f9;
-      border-radius: 10px;
-      border: 1px solid #eee;
     }
-    .payment h2 {text-align: center; margin-bottom: 15px;}
+    .payment {
+      background: #fff;
+      margin: 40px 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .payment h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .payment p {
+      font-size: 0.95rem;
+      margin: 5px 0;
+    }
     .print-btn {
       display: block;
-      margin: 20px auto 0;
+      margin: 30px auto;
       padding: 10px 20px;
-      background: #007bff;
+      background-color: #e91e63;
       color: white;
+      font-weight: bold;
       border: none;
       border-radius: 6px;
-      font-size: 1rem;
       cursor: pointer;
     }
-    .print-btn:hover {background: #0056b3;}
     footer {
       text-align: center;
-      margin-top: 50px;
-      font-size: 0.9rem;
-      color: #888;
+      padding: 20px;
+      font-size: 0.85rem;
+      color: #999;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Antika Bouquet</h1>
-    <p>Buket cantik untuk setiap momen</p>
+    <p>Buket Cantik untuk Setiap Momen</p>
   </header>
 
-  <section class="products">
+  <nav>
+    <a href="#produk">Produk</a>
+    <a href="#pembayaran">Pembayaran</a>
+    <a href="#invoice">Cetak</a>
+  </nav>
+
+  <section class="products" id="produk">
     <div class="product">
       <img src="IMG-20250607-WA0026.jpg" alt="Buket 1">
-      <h3>Buket wisuda</h3>
+      <h3>Buket Wisuda</h3>
       <p>Rp60.000 - Rp120.000</p>
-      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+wisuda+(Rp60.000+-+Rp120.000)">Pesan via WA</a>
+      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+Wisuda+(Rp60.000+-+Rp120.000)">Pesan via WA</a>
     </div>
     <div class="product">
       <img src="IMG-20250607-WA0029.jpg" alt="Buket 2">
-      <h3>Buket uang kipas + bunga</h3>
-      <p>Rp300.000</p>
-      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+uang+kipas+%2B+bunga+(Rp300.000)">Pesan via WA</a>
+      <h3>Buket Uang Kipas + Bunga</h3>
+      <p>Rp1.085.000</p>
+      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+Uang+Kipas+%2B+Bunga+(Rp1.085.000)">Pesan via WA</a>
     </div>
     <div class="product">
       <img src="IMG-20250607-WA0034.jpg" alt="Buket 3">
-      <h3>Round buket mawar + bunga kering</h3>
+      <h3>Round Mawar Mix Bunga Kering</h3>
       <p>Rp250.000</p>
-      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Round+buket+mawar+mix+bunga+kering+(Rp250.000)">Pesan via WA</a>
+      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Round+Mawar+Mix+(Rp250.000)">Pesan via WA</a>
     </div>
-    <div class="product">
-      <img src="IMG-20250607-WA0039.jpg" alt="Buket 4">
-      <h3>Buket uang kipas</h3>
-      <p>Rp45.000 - Rp300.000</p>
-      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+uang+kipas+(Rp45.000+-+Rp300.000)">Pesan via WA</a>
-    </div>
-    <div class="product">
-      <img src="IMG-20250607-WA0076.jpg" alt="Buket 5">
-      <h3>Buket wisuda</h3>
-      <p>Rp45.000 - Rp300.000</p>
-      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+wisuda+(Rp45.000+-+Rp300.000)">Pesan via WA</a>
-    </div>
-    <div class="product">
-      <img src="IMG-20250607-WA0078.jpg" alt="Buket 6">
-      <h3>Buket custom request</h3>
-      <p>Rp45.000 - Rp100.000</p>
-      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+custom+request+(Rp45.000+-+Rp100.000)">Pesan via WA</a>
-    </div>
+    <!-- Tambahkan produk lainnya di sini dengan pola yang sama -->
   </section>
 
-  <section class="payment">
-    <h2>Metode Pembayaran</h2>
-    <p><strong>Transfer Bank (BRI):</strong><br/> No. Rek: <strong>5985 0105 2797 537</strong><br/> Atas nama: <strong>Antika Sugesti</strong></p>
-    <p><strong>DANA:</strong><br/> No. DANA: <strong>0822-4240-6520</strong><br/> Atas nama: <strong>Antika Sugesti</strong></p>
-    <p style="margin-top: 15px;">Setelah transfer, kirim bukti pembayaran via WhatsApp:</p>
-    <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+sudah+transfer+untuk+pembelian+buket+di+Antika+Bouquet.+Berikut+buktinya:" target="_blank">Konfirmasi via WhatsApp</a>
-    <button class="print-btn" onclick="window.print()">Cetak Invoice</button>
+  <section class="payment" id="pembayaran">
+    <h2>Informasi Pembayaran</h2>
+    <p><strong>DANA:</strong> 082242406520 a.n. Antika Sugesti</p>
+    <p><strong>BRI:</strong> 5985 0105 2797 537 a.n. Antika Sugesti</p>
+    <p>Silakan konfirmasi pembayaran melalui WhatsApp setelah transfer.</p>
+  </section>
+
+  <section class="section-title" id="invoice">
+    <h2>Cetak Invoice</h2>
+    <button class="print-btn" onclick="window.print()">🧾 Cetak Invoice</button>
   </section>
 
   <footer>
-    <p>&copy; 2025 Antika Bouquet. All rights reserved.</p>
+    &copy; 2025 Antika Bouquet. All rights reserved.
   </footer>
+
 </body>
 </html>
