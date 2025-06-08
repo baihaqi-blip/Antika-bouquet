@@ -1,168 +1,158 @@
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html><html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Antika Bouquet</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: 'Inter', sans-serif;
-      background: #fdfdfd;
+    }
+    body {
+      background-color: #fff8f0;
       color: #333;
+      padding: 20px;
     }
     header {
-      background-color: #f8e1e7;
-      padding: 40px 20px;
       text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 30px 0;
     }
     header h1 {
       font-size: 2.5rem;
-      margin-bottom: 10px;
+      color: #d26a5c;
     }
-    nav {
-      background: #fff;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      border-bottom: 1px solid #eee;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+    header p {
+      color: #555;
+      margin-top: 10px;
     }
-    nav a {
-      text-decoration: none;
-      color: #e91e63;
-      font-weight: 600;
+    .controls {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .controls input, .controls select {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin: 0 10px;
     }
     .products {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      padding: 40px 20px;
     }
     .product {
-      background: #fff;
+      border: 1px solid #eee;
       border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
       padding: 15px;
       text-align: center;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+    .product:hover {
+      transform: translateY(-5px);
     }
     .product img {
       width: 100%;
       max-width: 220px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px;
       border-radius: 10px;
-      margin-bottom: 10px;
     }
     .product h3 {
-      font-size: 1.1rem;
       margin: 10px 0 5px;
+      color: #b45f4d;
     }
     .product p {
-      font-size: 0.95rem;
-      margin-bottom: 10px;
+      margin: 0 0 10px;
     }
     .btn {
       display: inline-block;
+      padding: 10px 15px;
       background-color: #25d366;
-      color: white;
-      padding: 8px 14px;
-      border-radius: 5px;
+      color: #fff;
       text-decoration: none;
+      border-radius: 5px;
       font-weight: bold;
-    }
-    .section-title {
-      text-align: center;
-      font-size: 1.5rem;
-      margin-top: 40px;
-    }
-    .payment {
-      background: #fff;
-      margin: 40px 20px;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    .payment h2 {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-    }
-    .payment p {
-      font-size: 0.95rem;
-      margin: 5px 0;
-    }
-    .print-btn {
-      display: block;
-      margin: 30px auto;
-      padding: 10px 20px;
-      background-color: #e91e63;
-      color: white;
-      font-weight: bold;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
     }
     footer {
       text-align: center;
-      padding: 20px;
-      font-size: 0.85rem;
-      color: #999;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #888;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Antika Bouquet</h1>
-    <p>Buket Cantik untuk Setiap Momen</p>
-  </header>
+    <p>Buket cantik untuk setiap momen</p>
+  </header>  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Cari produk...">
+    <select id="categoryFilter">
+      <option value="all">Semua Kategori</option>
+      <option value="wisuda">Wisuda</option>
+      <option value="uang">Buket Uang</option>
+      <option value="custom">Custom</option>
+    </select>
+  </div>  <section class="products" id="productList">
+    <!-- Produk akan dimasukkan lewat JavaScript -->
+  </section>  <footer>
+    <p>Metode Pembayaran:</p>
+    <p>DANA: 082242406520 a.n. Antika Sugesti</p>
+    <p>BRI: 598501052797537 a.n. Antika Sugesti</p>
+    <br>
+    <p>&copy; 2025 Antika Bouquet. All rights reserved.</p>
+  </footer>  <script>
+    const products = [
+      { name: 'Buket wisuda', price: 'Rp60.000 - Rp120.000', image: 'IMG-20250607-WA0026.jpg', category: 'wisuda' },
+      { name: 'Buket uang kipas + bunga', price: 'Rp300.000', image: 'IMG-20250607-WA0029.jpg', category: 'uang' },
+      { name: 'Round buket mawar mix bunga kering', price: 'Rp250.000', image: 'IMG-20250607-WA0034.jpg', category: 'wisuda' },
+      { name: 'Round buket mawar mix bunga kering', price: 'Rp250.000', image: 'IMG-20250607-WA0036.jpg', category: 'wisuda' },
+      { name: 'Buket uang kipas', price: 'Rp45.000 - Rp300.000', image: 'IMG-20250607-WA0039.jpg', category: 'uang' },
+      { name: 'Buket custom', price: 'Rp45.000 - Rp300.000', image: 'IMG-20250607-WA0075.jpg', category: 'custom' },
+      { name: 'Buket wisuda', price: 'Rp45.000 - Rp300.000', image: 'IMG-20250607-WA0076.jpg', category: 'wisuda' },
+      { name: 'Buket custom request', price: 'Rp45.000 - Rp100.000', image: 'IMG-20250607-WA0078.jpg', category: 'custom' },
+      { name: 'Buket uang kipas + bunga kering request isi', price: 'Rp45.000 - Rp300.000', image: 'IMG-20250607-WA0079.jpg', category: 'uang' },
+    ];
 
-  <nav>
-    <a href="#produk">Produk</a>
-    <a href="#pembayaran">Pembayaran</a>
-    <a href="#invoice">Cetak</a>
-  </nav>
+    const productList = document.getElementById('productList');
+    const searchInput = document.getElementById('searchInput');
+    const categoryFilter = document.getElementById('categoryFilter');
 
-  <section class="products" id="produk">
-    <div class="product">
-      <img src="IMG-20250607-WA0026.jpg" alt="Buket 1">
-      <h3>Buket Wisuda</h3>
-      <p>Rp60.000 - Rp120.000</p>
-      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+Wisuda+(Rp60.000+-+Rp120.000)">Pesan via WA</a>
-    </div>
-    <div class="product">
-      <img src="IMG-20250607-WA0029.jpg" alt="Buket 2">
-      <h3>Buket Uang Kipas + Bunga</h3>
-      <p>Rp1.085.000</p>
-      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Buket+Uang+Kipas+%2B+Bunga+(Rp1.085.000)">Pesan via WA</a>
-    </div>
-    <div class="product">
-      <img src="IMG-20250607-WA0034.jpg" alt="Buket 3">
-      <h3>Round Mawar Mix Bunga Kering</h3>
-      <p>Rp250.000</p>
-      <a class="btn" href="https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+Round+Mawar+Mix+(Rp250.000)">Pesan via WA</a>
-    </div>
-    <!-- Tambahkan produk lainnya di sini dengan pola yang sama -->
-  </section>
+    function renderProducts() {
+      const search = searchInput.value.toLowerCase();
+      const category = categoryFilter.value;
+      productList.innerHTML = '';
+      const filtered = products.filter(p => {
+        return (category === 'all' || p.category === category) &&
+               (p.name.toLowerCase().includes(search));
+      });
 
-  <section class="payment" id="pembayaran">
-    <h2>Informasi Pembayaran</h2>
-    <p><strong>DANA:</strong> 082242406520 a.n. Antika Sugesti</p>
-    <p><strong>BRI:</strong> 5985 0105 2797 537 a.n. Antika Sugesti</p>
-    <p>Silakan konfirmasi pembayaran melalui WhatsApp setelah transfer.</p>
-  </section>
+      if (filtered.length === 0) {
+        productList.innerHTML = '<p>Tidak ada produk ditemukan.</p>';
+        return;
+      }
 
-  <section class="section-title" id="invoice">
-    <h2>Cetak Invoice</h2>
-    <button class="print-btn" onclick="window.print()">🧾 Cetak Invoice</button>
-  </section>
+      filtered.forEach(product => {
+        const link = `https://wa.me/6282242406520?text=Halo,+saya+ingin+pesan+${encodeURIComponent(product.name)}+(${encodeURIComponent(product.price)})`;
+        productList.innerHTML += `
+          <div class="product">
+            <img src="${product.image}" alt="${product.name}">
+            <h3>${product.name}</h3>
+            <p>${product.price}</p>
+            <a class="btn" href="${link}" target="_blank">Pesan via WA</a>
+          </div>
+        `;
+      });
+    }
 
-  <footer>
-    &copy; 2025 Antika Bouquet. All rights reserved.
-  </footer>
-
-</body>
+    searchInput.addEventListener('input', renderProducts);
+    categoryFilter.addEventListener('change', renderProducts);
+    window.onload = renderProducts;
+  </script></body>
 </html>
